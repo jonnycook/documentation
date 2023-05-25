@@ -1,13 +1,13 @@
 import { Component } from "react";
 import { component, styled } from "./component";
-import { X, XObject } from "./XObject";
+import { X, x, XObject } from "./XObject";
 
 const state = X({
   tick: 0
 })
 
 XObject.observe(state, 'tick', () => {
-  console.log('tick changed', state.tick);
+  console.log('tick changed', x(state));
 })
 
 @component
