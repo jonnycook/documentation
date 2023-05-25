@@ -1,6 +1,4 @@
-import { Component } from "react";
-import { X, x,, XObject } from "./XObject";
-import { component } from "./component";
+import { X, x, XObject } from "./XObject";
 
 const state = X({
   tick: 0
