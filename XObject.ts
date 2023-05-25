@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { X, XObject } from "./XObject";
+import { X, x,, XObject } from "./XObject";
 import { component } from "./component";
 
 const state = X({
@@ -7,7 +7,7 @@ const state = X({
 })
 
 XObject.observe(state, 'tick', () => {
-  console.log('tick changed', state.tick);
+  console.log('tick changed', x(state));
 });
 
 function updateTick() {
